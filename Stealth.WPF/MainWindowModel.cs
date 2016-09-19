@@ -1,5 +1,6 @@
 ﻿using Stealth.Core.Utilities;
 using Stealth.Core.WindowInstance;
+using Stealth.WPF.Util;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -87,6 +88,27 @@ namespace Stealth.WPF
                     targetWindow.isTopMost = (bool)windowView.isTop;
                 //targetWindow.isModified = true;
             }
+        }
+
+
+        public void Exit(object obj)
+        {
+            Environment.Exit(0);
+        }
+
+
+        public void About(object obj)
+        {
+
+        }
+
+
+        public void CheckForUpdates(object obj)
+        {
+            //var updater = new Util.Updater();
+            //updater.UpdateApp();
+            UpdaterView uv = new UpdaterView();
+            uv.ShowDialog();
         }
 
 

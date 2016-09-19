@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("Stealth.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("celeron533")]
 [assembly: AssemblyProduct("Stealth.WPF")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
@@ -53,3 +53,6 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+// Making the App Squirrel Aware
+[assembly: AssemblyMetadata("SquirrelAwareVersion", "1")]

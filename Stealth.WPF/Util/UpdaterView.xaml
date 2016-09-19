@@ -1,0 +1,12 @@
+﻿<Window x:Name="UpdaterWindow" x:Class="Stealth.WPF.Util.UpdaterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Stealth.WPF.Util"
+        mc:Ignorable="d"
+        Title="Check for Updates" Height="204" Width="322">
+    <Grid>
+        <Button Command="{Binding close}" CommandParameter="{Binding ElementName=UpdaterWindow}" Content="Close"/>
+    </Grid>
+</Window>

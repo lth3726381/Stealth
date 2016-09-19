@@ -85,6 +85,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +105,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="NotificationObject.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Util\Updater.cs" />
+    <Compile Include="Util\UpdaterModel.cs" />
+    <Compile Include="Util\UpdaterView.xaml.cs">
+      <DependentUpon>UpdaterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Util\UpdaterViewModel.cs" />
     <Compile Include="WindowListModel.cs" />
     <Page Include="MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -118,6 +126,10 @@
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Util\UpdaterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowModel.cs" />
@@ -155,6 +167,7 @@
       <Name>Stealth.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

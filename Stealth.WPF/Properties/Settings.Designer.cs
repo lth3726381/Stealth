@@ -22,5 +22,76 @@ namespace Stealth.WPF.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Stealth.WPF")]
+        public string PackageID {
+            get {
+                return ((string)(this["PackageID"]));
+            }
+            set {
+                this["PackageID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShortcutLocation_StartMenu {
+            get {
+                return ((bool)(this["ShortcutLocation_StartMenu"]));
+            }
+            set {
+                this["ShortcutLocation_StartMenu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShortcutLocation_Desktop {
+            get {
+                return ((bool)(this["ShortcutLocation_Desktop"]));
+            }
+            set {
+                this["ShortcutLocation_Desktop"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\")]
+        public string UpdateUrl {
+            get {
+                return ((string)(this["UpdateUrl"]));
+            }
+            set {
+                this["UpdateUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CheckUpdatesEvery {
+            get {
+                return ((int)(this["CheckUpdatesEvery"]));
+            }
+            set {
+                this["CheckUpdatesEvery"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime LastUpdateCheckDate {
+            get {
+                return ((global::System.DateTime)(this["LastUpdateCheckDate"]));
+            }
+            set {
+                this["LastUpdateCheckDate"] = value;
+            }
+        }
     }
 }
